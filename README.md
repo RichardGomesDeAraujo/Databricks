@@ -2,7 +2,7 @@
 
 # Deploy de Dados no Synapse do Azure
 ## Passo a passo de como criar:
-- [Subscription](Readme.md#Subscription)
+- [Subscription](README.md#Subscription)
 - [Resource](Markdown.md#Resource) Groups
 - [Storage](Markdown.md#Storage) Accounts
 - [Azure](Markdown.md#Azure) Active Directory
