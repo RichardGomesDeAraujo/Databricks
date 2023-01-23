@@ -1,8 +1,14 @@
+
+
 <img src="C:/Users/Usuario/Desktop/Lenovo Files/Richard Araujo/1_Preparacao_de_Dados/Imagens/logo.png" alt="Hands On Data" style="height: 100px; width:100px;"/>
 
 # Deploy de Dados no Synapse do Azure
-## Passo a passo de como criar:
+> O Objetivo deste trabalho é criar um guia para estudo e compreensão do Databricks com o intuito de evoluir na função de Data Engineer.
 
+
+> Abaixo temos um tutorial, passo a passo, de como criar uma estrutuda de dados no Databricks, passando pelo ETL até a ingestão de dados no Synapse do Azure.
+
+> 
 ## Índice
 - [Subscription](README.md#Subscription)
 - [Resource](README.md#Resource) Groups
@@ -45,66 +51,128 @@
 
 ## Resource
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Storage
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Azure
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Certificates
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Conteiner
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Upload
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Role
 
-### Storage
+###### [Voltar ao Índice](README.md#Índice)
 
 ### Storage
+
+###### [Voltar ao Índice](README.md#Índice)
+
+### Storage
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Permissões
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Databricks
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Cluster
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Notebook
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Importar
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Diretório
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Unidade
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Executar
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ### cl.count()
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ### cl.groupby()
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ### cl.agg(count().alias())
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ### cl.display
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Create
+
+###### [Voltar ao Índice](README.md#Índice)
  
 ## Create
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Security
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Servidor
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Open
 
-### Create
+###### [Voltar ao Índice](README.md#Índice)
 
 ### Create
+
+###### [Voltar ao Índice](README.md#Índice)
+
+### Create
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ## Escrever
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ### Camada
+
+###### [Voltar ao Índice](README.md#Índice)
 
 ### Escrever
 
+###### [Voltar ao Índice](README.md#Índice)
+
 ## Save
 
-
+###### [Voltar ao Índice](README.md#Índice)
