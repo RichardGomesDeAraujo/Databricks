@@ -2,6 +2,8 @@
 
 # Deploy de Dados no Synapse do Azure
 ## Passo a passo de como criar:
+
+##Índice
 - [Subscription](README.md#Subscription)
 - [Resource](README.md#Resource) Groups
 - [Storage](README.md#Storage) Accounts
