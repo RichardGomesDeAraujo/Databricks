@@ -3,38 +3,38 @@
 # Deploy de Dados no Synapse do Azure
 ## Passo a passo de como criar:
 - [Subscription](README.md#Subscription)
-- [Resource](Markdown.md#Resource) Groups
-- [Storage](Markdown.md#Storage) Accounts
-- [Azure](Markdown.md#Azure) Active Directory
-- [Certificates](Markdown.md#Certificates) & Secrets
-- [Conteiner](Markdown.md#Conteiner)
-- [Upload](Markdown.md#Upload) de Dados
-- [Role](Markdown.md#Role) Assingments
-  - [Storage](Markdown.md#Storage) Blob Data Contributor
-  - [Storage](Markdown.md#Storage) Blob Data Reader
-- [Permissões](Markdown.md#Permissões) no Manage ACL
-- [Databricks](Markdown.md#Databricks) Community
-- [Cluster](Markdown.md#Cluster)
-- [Notebook](Markdown.md#Notebook) no Cluster
-- [Importar](Markdown.md#Importar) Bibliotecas PySpark
-- [Diretório](Markdown.md#Diretório) no notebook com código
-- [Unidade](Markdown.md#Unidade) com código
-- [Executar](Markdown.md#Executar) Comandos de Visualização
-  - [cl.count()](Markdown.md#cl.count())
-  - [cl.groupby()](Markdown.md#cl.groupby())
-  - [cl.agg(count().alias())](Markdown.md#cl.agg(count().alias()))
-  - [cl.display](Markdown.md#cl.display)
-- [Create](Markdown.md#Create) Database
-- [Create](Markdown.md#Create) Table
-- [Security](Markdown.md#Security)
-- [Servidor](Markdown.md#Servidor) Dedicado
-- [Open](Markdown.md#Open) Synapse Studio
-  - [Create](Markdown.md#Create) Master Key
-  - [Create](Markdown.md#Create) Schema
-- [Escrever](Markdown.md#Escrever) no Synapse
-  - [Camada](Markdown.md#Camada) de Conexão
-  - [Escrever](Markdown.md#Escrever) no Synapse
-- [Save](Markdown.md#Save) no Delta
+- [Resource](README.md#Resource) Groups
+- [Storage](README.md#Storage) Accounts
+- [Azure](README.md#Azure) Active Directory
+- [Certificates](README.md#Certificates) & Secrets
+- [Conteiner](README.md#Conteiner)
+- [Upload](README.md#Upload) de Dados
+- [Role](README.md#Role) Assingments
+  - [Storage](README.md#Storage) Blob Data Contributor
+  - [Storage](README.md#Storage) Blob Data Reader
+- [Permissões](README.md#Permissões) no Manage ACL
+- [Databricks](README.md#Databricks) Community
+- [Cluster](README.md#Cluster)
+- [Notebook](README.md#Notebook) no Cluster
+- [Importar](README.md#Importar) Bibliotecas PySpark
+- [Diretório](README.md#Diretório) no notebook com código
+- [Unidade](README.md#Unidade) com código
+- [Executar](README.md#Executar) Comandos de Visualização
+  - [cl.count()](README.md#cl.count())
+  - [cl.groupby()](README.md#cl.groupby())
+  - [cl.agg(count().alias())](README.md#cl.agg(count().alias()))
+  - [cl.display](README.md#cl.display)
+- [Create](README.md#Create) Database
+- [Create](README.md#Create) Table
+- [Security](README.md#Security)
+- [Servidor](README.md#Servidor) Dedicado
+- [Open](README.md#Open) Synapse Studio
+  - [Create](README.md#Create) Master Key
+  - [Create](README.md#Create) Schema
+- [Escrever](README.md#Escrever) no Synapse
+  - [Camada](README.md#Camada) de Conexão
+  - [Escrever](README.md#Escrever) no Synapse
+- [Save](README.md#Save) no Delta
 
 
 ## Subscription
