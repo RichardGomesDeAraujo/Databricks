@@ -1,5 +1,6 @@
 
 
+
 <img src="C:/Users/Usuario/Desktop/Lenovo Files/Richard Araujo/1_Preparacao_de_Dados/Imagens/logo.png" alt="Hands On Data" style="height: 100px; width:100px;"/>
 
 # Deploy de Dados no Synapse do Azure
@@ -18,8 +19,8 @@
 - [Conteiner](README.md#Conteiner)
 - [Upload](README.md#Upload) de Dados
 - [Role](README.md#Role) Assingments
-  - Storage Blob Data [Contributor](README.md#Storage)
-  - Storage Blob Data [Reader](README.md#Storage)
+  - Storage Blob Data [Contributor](README.md#Contributor)
+  - Storage Blob Data [Reader](README.md#Reader)
 - [Permissões](README.md#Permissões) no Manage ACL
 - [Databricks](README.md#Databricks) Community
 - [Cluster](README.md#Cluster)
@@ -32,16 +33,16 @@
   - [cl.groupby()](README.md#cl.groupby())
   - [cl.agg(count().alias())](README.md#cl.agg(count().alias()))
   - [cl.display](README.md#cl.display)
-- Create [Database](README.md#Create)
-- Create [Table](README.md#Create)
+- Create [Database](README.md#Database)
+- Create [Table](README.md#Table)
 - [Security](README.md#Security)
 - [Servidor](README.md#Servidor) Dedicado
 - [Open](README.md#Open) Synapse Studio
-  - Create [Master](README.md#Create) Key
-  - Create [Schema](README.md#Create)
+  - Create [Master](README.md#Master) Key
+  - Create [Schema](README.md#Schema)
 - [Escrever](README.md#Escrever) no Synapse
-  - Camada de [Conexão](README.md#Camada)
-  - Escrever no [Synapse](README.md#Escrever)
+  - Camada de [Conexão](README.md#Conexão)
+  - Escrever no [Synapse](README.md#Synapse)
 - [Save](README.md#Save) no Delta
 
 
