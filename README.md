@@ -18,8 +18,8 @@
 - [Conteiner](README.md#Conteiner)
 - [Upload](README.md#Upload) de Dados
 - [Role](README.md#Role) Assingments
-  - [Storage](README.md#Storage) Blob Data Contributor
-  - [Storage](README.md#Storage) Blob Data Reader
+  - Storage Blob Data [Contributor](README.md#Storage)
+  - Storage Blob Data [Reader](README.md#Storage)
 - [Permissões](README.md#Permissões) no Manage ACL
 - [Databricks](README.md#Databricks) Community
 - [Cluster](README.md#Cluster)
@@ -32,16 +32,16 @@
   - [cl.groupby()](README.md#cl.groupby())
   - [cl.agg(count().alias())](README.md#cl.agg(count().alias()))
   - [cl.display](README.md#cl.display)
-- [Create](README.md#Create) Database
-- [Create](README.md#Create) Table
+- Create [Database](README.md#Create)
+- Create [Table](README.md#Create)
 - [Security](README.md#Security)
 - [Servidor](README.md#Servidor) Dedicado
 - [Open](README.md#Open) Synapse Studio
-  - [Create](README.md#Create) Master Key
-  - [Create](README.md#Create) Schema
+  - Create [Master](README.md#Create) Key
+  - Create [Schema](README.md#Create)
 - [Escrever](README.md#Escrever) no Synapse
-  - [Camada](README.md#Camada) de Conexão
-  - [Escrever](README.md#Escrever) no Synapse
+  - Camada de [Conexão](README.md#Camada)
+  - Escrever no [Synapse](README.md#Escrever)
 - [Save](README.md#Save) no Delta
 
 
@@ -77,11 +77,11 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Storage
+### Contributor
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Storage
+### Reader
 
 ###### [Voltar ao Índice](README.md#Índice)
 
@@ -133,11 +133,11 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-## Create
+## Database
 
 ###### [Voltar ao Índice](README.md#Índice)
  
-## Create
+## Table
 
 ###### [Voltar ao Índice](README.md#Índice)
 
@@ -153,11 +153,11 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Create
+### Master
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Create
+### Schema
 
 ###### [Voltar ao Índice](README.md#Índice)
 
@@ -165,11 +165,11 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Camada
+### Conexão
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-### Escrever
+### Synapse
 
 ###### [Voltar ao Índice](README.md#Índice)
 
