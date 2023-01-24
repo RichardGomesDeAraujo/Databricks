@@ -12,7 +12,7 @@
 - [Resource Groups](README.md#Resource-Groups)
 - [Storage Accounts](README.md#Storage-Accounts)
 - [Azure Active Directory](README.md#Azure-Active-Directory)
-- [Certificates & Secrets](README.md#Certificates-&-Secrets)
+- [Certificates and Secrets](README.md#Certificates-and-Secrets)
 - [Conteiner](README.md#Conteiner)
 - [Upload de Dados](README.md#Upload-de-Dados)
 - [Role Assingments](README.md#Role-Assingments)
