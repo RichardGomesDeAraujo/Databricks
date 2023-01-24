@@ -52,7 +52,7 @@ Acesse: [**portal.azure.com**](https://portal.azure.com/#home) e faça uma ***su
 
 ---
 
-## Resource
+## Resource Groups
 
 Crie um **Resource Groups** e utilize um nome com a abreviação rg de *Resource Groups* e em seguida algum nome que identifique os dados, ex.: rg-monitorimagens. 
 
@@ -64,7 +64,7 @@ Salve o código da criação do *Resource Groups* para utilizar nos próximos pa
 
 ---
 
-## Storage
+## Storage Accounts
 
 Crie um ***Storage Accounts*** para criar o seu *Data Lake* e utilize o prefixo st de *Storage Accounts* no nome seguido do nome que identifique os dados, ex.: st-monitorimagens.
 
@@ -79,7 +79,7 @@ Salve o código da criação do *Storage Accounts* para utilizar nos próximos p
 
 ---
 
-## Azure
+## Azure Active Directory
 
 Crie um ***Azure Active Directory*** para criar um *application* que é um usuário para se conectar entre o Databricks e o *Data Lake*
 Utilize o prefixo ap de *application* e o nome que identifique os dados, ex.: apmonitorimagens
@@ -91,7 +91,7 @@ Utilize o prefixo ap de *application* e o nome que identifique os dados, ex.: ap
 
 ---
 
-## Certificates
+## Certificates & Secrets
 
 Em seguida, na mesma tela, clique em **Certificates & Secrets** para criar a sua chave.
 Utilize o prefixo key seguido do nome que identifique os dados, ex.: keymonitorimagens
@@ -115,7 +115,7 @@ Anote o código gerado para o *Conteiner*.
 
 ---
 
-## Upload
+## Upload de Dados
 
 Após ter criado o *Conteiner*, clique no *Conteiner* e faça um *Upload* de dados navegando em “Meu Computador” para identificar as tabelas que serão carregadas.
 
@@ -124,18 +124,18 @@ Após ter criado o *Conteiner*, clique no *Conteiner* e faça um *Upload* de dad
 
 ---
 
-## Role
+## Role Assingments
 
 Enquanto os dados carregam, é necessário ir no **Access Control (IAM)** e atribuir papéis ao *Conteiner* no *Role Assingments*.
 
 
-- #### Contributor
+- #### Storage Blob Data Contributo
 
 Clique em **Storage Blob Data Contributor** para fazer a atribuição. 
 
 Em seguida clique em *Select Members* e coloque o *application* criado anteriormente, ex.: apmonitorimagens
 
-- #### Reader
+- #### Storage Blob Data Reader
   
 Em Seguida, Atribua o **Storage Blob Data Reader** e coloque o *application* novamente igual ao passo anterior. 
 
@@ -143,7 +143,7 @@ Em Seguida, Atribua o **Storage Blob Data Reader** e coloque o *application* nov
 
 ---
 
-## Permissões
+## Permissões no Manage ACL
 
 Em **Manage ACL**, atribua permissões para *Other* de *Read* e *Write* e adicione em *Add principal* o apmonitorimagens e atribua *Read* e *Write* para ele também.
 
@@ -151,7 +151,7 @@ Em **Manage ACL**, atribua permissões para *Other* de *Read* e *Write* e adicio
 
 ---
 
-## Databricks
+## Databricks Community
 
 Depois disso, se você não tiver uma conta corporativa do **Azure Databricks**, você pode utilizar o **Databricks Community**, para isso, basta se cadastrar com uma conta do Google, Hotmail, ou outras.
 
