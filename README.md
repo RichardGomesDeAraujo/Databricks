@@ -10,16 +10,16 @@
 ## Índice
 - [Subscription](README.md#Subscription)
 - [Resource Groups](README.md#Resource-Groups)
-- [Storage](README.md#Storage) Accounts
-- [Azure](README.md#Azure) Active Directory
-- [Certificates](README.md#Certificates) & Secrets
+- [Storage Accounts](README.md#Storage-Accounts)
+- [Azure Active Directory](README.md#Azure-Active-Directory)
+- [Certificates & Secrets](README.md#Certificates-&-Secrets)
 - [Conteiner](README.md#Conteiner)
-- [Upload](README.md#Upload) de Dados
-- [Role](README.md#Role) Assingments
-  - Storage Blob Data [Contributor](README.md#Contributor)
-  - Storage Blob Data [Reader](README.md#Reader)
-- [Permissões](README.md#Permissões) no Manage ACL
-- [Databricks](README.md#Databricks) Community
+- [Upload de Dados](README.md#Upload-de-Dados)
+- [Role Assingments](README.md#Role-Assingments)
+  - [Storage Blob Data Contributor](README.md#Storage-Blob-Data-Contributor)
+  - [Storage Blob Data Reader](README.md#Storage-Blob-Data-Reader)
+- [Permissões no Manage ACL](README.md#Permissões-no-Manage-ACL)
+- [Databricks Community](README.md#Databricks-Community)
 - [Cluster](README.md#Cluster)
 - [Notebook](README.md#Notebook) no Cluster
 - [Importar](README.md#Importar) Bibliotecas PySpark
@@ -52,7 +52,7 @@ Acesse: [**portal.azure.com**](https://portal.azure.com/#home) e faça uma ***su
 
 ---
 
-## Resource Groups
+## Resource
 
 Crie um **Resource Groups** e utilize um nome com a abreviação rg de *Resource Groups* e em seguida algum nome que identifique os dados, ex.: rg-monitorimagens. 
 
