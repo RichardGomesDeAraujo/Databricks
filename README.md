@@ -1,6 +1,3 @@
-
-
-
 <img src="C:/Users/Usuario/Desktop/Lenovo Files/Richard Araujo/1_Preparacao_de_Dados/Imagens/logo.png" alt="Hands On Data" style="height: 100px; width:100px;"/>
 
 # Deploy de Dados no Synapse do Azure
@@ -41,135 +38,246 @@
   - Escrever no [Synapse](README.md#Synapse)
 - [Save](README.md#Save) no Delta
 
+---
+
 
 ## Subscription
 
-###### [Voltar ao Índice](README.md#Índice)
+Siga as instruções do site da Azure para criar uma conta gratuita, que será utilizada para prepararmos o ambiente de trabalho.
+
+Acesse: [**portal.azure.com**](https://portal.azure.com/#home) e faça uma ***subscription*** do tipo ***free trial***.
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Resource
 
-###### [Voltar ao Índice](README.md#Índice)
+Crie um **Resource Groups** e utilize um nome com a abreviação rg de *Resource Groups* e em seguida algum nome que identifique os dados, ex.: rg-monitorimagens. 
+
+Escolha uma região para armazenar os dados. 
+
+Salve o código da criação do *Resource Groups* para utilizar nos próximos passos.
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Storage
 
-###### [Voltar ao Índice](README.md#Índice)
+Crie um ***Storage Accounts*** para criar o seu *Data Lake* e utilize o prefixo st de *Storage Accounts* no nome seguido do nome que identifique os dados, ex.: st-monitorimagens.
+
+Escolha a região para armazenamento e a Performance do tipo *Standard*.
+
+> ❕ IMPORTANTE: em *Advanced*, marque a opção *Data Lake Storage* Gen2 para criar um *Azure Data Lake*.
+
+Salve o código da criação do *Storage Accounts* para utilizar nos próximos passos.
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Azure
 
-###### [Voltar ao Índice](README.md#Índice)
+Crie um ***Azure Active Directory*** para criar um *application* que é um usuário para se conectar entre o Databricks e o *Data Lake*
+Utilize o prefixo ap de *application* e o nome que identifique os dados, ex.: apmonitorimagens
+
+> ❕ IMPORTANTE: Após efetuar o registro, anotar o *Application (Client) ID* e anotar o *Directory (tenant) ID*
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Certificates
 
-###### [Voltar ao Índice](README.md#Índice)
+Em seguida, na mesma tela, clique em **Certificates & Secrets** para criar a sua chave.
+Utilize o prefixo key seguido do nome que identifique os dados, ex.: keymonitorimagens
+
+Após criado a chave, anote o código gerado da *Value* e o código gerado do *Secret ID*
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Conteiner
 
-###### [Voltar ao Índice](README.md#Índice)
+Após estes passos, volte ao seu *Storage Accounts* e clique em *Data Lake Storage* para criar um **Conteiner**.
+Utilize o prefixo ct seguido do nome que identifique os dados, ex.: ctmonitorimagens
+
+Anote o código gerado para o *Conteiner*.
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Upload
 
-###### [Voltar ao Índice](README.md#Índice)
+Após ter criado o *Conteiner*, clique no *Conteiner* e faça um *Upload* de dados navegando em “Meu Computador” para identificar as tabelas que serão carregadas.
+
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Role
 
-###### [Voltar ao Índice](README.md#Índice)
+Enquanto os dados carregam, é necessário ir no **Access Control (IAM)** e atribuir papéis ao *Conteiner* no *Role Assingments*.
 
-### Contributor
 
-###### [Voltar ao Índice](README.md#Índice)
+- #### Contributor
 
-### Reader
+Clique em **Storage Blob Data Contributor** para fazer a atribuição. 
 
-###### [Voltar ao Índice](README.md#Índice)
+Em seguida clique em *Select Members* e coloque o *application* criado anteriormente, ex.: apmonitorimagens
+
+- #### Reader
+  
+Em Seguida, Atribua o **Storage Blob Data Reader** e coloque o *application* novamente igual ao passo anterior. 
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Permissões
 
-###### [Voltar ao Índice](README.md#Índice)
+Em **Manage ACL**, atribua permissões para *Other* de *Read* e *Write* e adicione em *Add principal* o apmonitorimagens e atribua *Read* e *Write* para ele também.
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Databricks
 
-###### [Voltar ao Índice](README.md#Índice)
+Depois disso, se você não tiver uma conta corporativa do **Azure Databricks**, você pode utilizar o **Databricks Community**, para isso, basta se cadastrar com uma conta do Google, Hotmail, ou outras.
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Cluster
 
-###### [Voltar ao Índice](README.md#Índice)
+Uma vez no ambiente do Databricks, crie um **Cluster** em *Create Cluster* e utilize o prefixo db para referenciar Databricks, ex.: dbmonitorimagenscanal
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Notebook
 
-###### [Voltar ao Índice](README.md#Índice)
+Uma vez criado o *cluster*, vá até *Workspace*, *Users*, e em *Users* deverá ter um *Notebook* previamente criado.
+Ao acessar o *Notebook*, vá até o botão *Clear* e clique em *Clear All Outputs*.
+No campo *Detached*, procure e clique no dbmonitorimagenscanal para anexar o seu *cluster*.
 
-## Importar
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Diretório
 
-###### [Voltar ao Índice](README.md#Índice)
+Em seguida crie um diretório com o seguinte código PySpark:
+
+```python
+Dbutils.fs.mkdirs(“/mnt/dadosmonitorimagens”)
+```
+
+###### [⏪](README.md#Índice)
+
+---
 
 ## Unidade
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Executar
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ### cl.count()
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
 
 ### cl.groupby()
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
 
 ### cl.agg(count().alias())
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
 
 ### cl.display
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Database
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
  
 ## Table
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Security
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Servidor
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Open
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ### Master
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
 
 ### Schema
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Escrever
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ### Conexão
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
 
 ### Synapse
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+---
 
 ## Save
 
-###### [Voltar ao Índice](README.md#Índice)
+###### [⏪](README.md#Índice)
+
+
