@@ -9,7 +9,7 @@
 > 
 ## Índice
 - [Subscription](README.md#Subscription)
-- [Resource](README.md#Resource) Groups
+- [Resource Groups](README.md#Resource-Groups)
 - [Storage](README.md#Storage) Accounts
 - [Azure](README.md#Azure) Active Directory
 - [Certificates](README.md#Certificates) & Secrets
@@ -52,7 +52,7 @@ Acesse: [**portal.azure.com**](https://portal.azure.com/#home) e faça uma ***su
 
 ---
 
-## Resource
+## Resource Groups
 
 Crie um **Resource Groups** e utilize um nome com a abreviação rg de *Resource Groups* e em seguida algum nome que identifique os dados, ex.: rg-monitorimagens. 
 
