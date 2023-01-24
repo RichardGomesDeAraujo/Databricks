@@ -28,11 +28,7 @@
 - [Importar](README.md#Importar) Bibliotecas PySpark
 - [Diretório](README.md#Diretório) no notebook com código
 - [Unidade](README.md#Unidade) com código
-- [Executar](README.md#Executar) Comandos de Visualização
-  - [cl.count()](README.md#cl.count())
-  - [cl.groupby()](README.md#cl.groupby())
-  - [cl.agg(count().alias())](README.md#cl.agg(count().alias()))
-  - [cl.display](README.md#cl.display)
+- [Executar](README.md#Executar) Comandos de Visualização PySpark
 - Create [Database](README.md#Database)
 - Create [Table](README.md#Table)
 - [Security](README.md#Security)
@@ -114,7 +110,7 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-## Executar
+## Executar  Comandos de Visualização PySpark
 
 ###### [Voltar ao Índice](README.md#Índice)
 
