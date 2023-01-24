@@ -91,7 +91,7 @@ Utilize o prefixo ap de *application* e o nome que identifique os dados, ex.: ap
 
 ---
 
-## Certificates & Secrets
+## Certificates and Secrets
 
 Em seguida, na mesma tela, clique em **Certificates & Secrets** para criar a sua chave.
 Utilize o prefixo key seguido do nome que identifique os dados, ex.: keymonitorimagens
