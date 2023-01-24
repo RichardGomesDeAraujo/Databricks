@@ -110,7 +110,7 @@
 
 ###### [Voltar ao Índice](README.md#Índice)
 
-## Executar  Comandos de Visualização PySpark
+## Executar
 
 ###### [Voltar ao Índice](README.md#Índice)
 
