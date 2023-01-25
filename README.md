@@ -230,11 +230,12 @@ extra_config = configs)
 
 Em seguida, ao rodar novamente o comando abaixo, todos os arquivos que foram feitos *upload* no *storage Account* devem aparecer listados:
 
-´´´
+```
 
 Dbutils.fs.mkdirs(“/mnt/dadosmonitorimagens”)
 
-´´´
+```
+###### [⏪](README.md#Índice)
 
 ### Comandos de Visualização PySpark
 
