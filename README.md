@@ -2,7 +2,7 @@
 
 
 
-###### by Richard Gomes de Araújo - 25/01/2023
+###### by [Richard Gomes de Araújo](https://github.com/RichardGomesDeAraujo) - 25/01/2023
 
 
 
