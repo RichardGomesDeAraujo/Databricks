@@ -1,6 +1,12 @@
 <img src="Logo.png" alt="Hands On Data" style="height: 100px; width:115px;"/>
 
+
+```
+Criado por Richard Gomes de Araújo em 25/01/2023
+```
+
 # Deploy de Dados no Synapse do Azure
+
 > O Objetivo deste trabalho é criar um guia para estudo e compreensão do Databricks com o intuito de evoluir na função de Data Engineer.
 
 
