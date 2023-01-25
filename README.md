@@ -1,5 +1,4 @@
-![Logo](logo.png)
-<img src="C:/Users/Usuario/Desktop/Lenovo Files/Richard Araujo/1_Preparacao_de_Dados/Imagens/logo.png" alt="Hands On Data" style="height: 100px; width:100px;"/>
+<img src="Logo.png" alt="Hands On Data" style="height: 100px; width:115px;"/>
 
 # Deploy de Dados no Synapse do Azure
 > O Objetivo deste trabalho é criar um guia para estudo e compreensão do Databricks com o intuito de evoluir na função de Data Engineer.
