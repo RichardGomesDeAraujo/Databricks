@@ -1,15 +1,16 @@
 <img src="Logo.png" alt="Hands On Data" style="height: 100px; width:115px;"/>
 
 
-```
-Criado por Richard Gomes de Araújo em 25/01/2023
-```
+
+###### by Richard Gomes de Araújo - 25/01/2023
+
+
 
 # Deploy de Dados no Synapse do Azure
 
 > O Objetivo deste trabalho é criar um guia para estudo e compreensão do Databricks com o intuito de evoluir na função de Data Engineer.
-
-
+>
+>
 > Abaixo temos um tutorial, passo a passo, de como criar uma estrutuda de dados no Databricks, passando pelo ETL até a ingestão de dados no Synapse do Azure.
 
 > 
