@@ -203,7 +203,7 @@ from pyspark.sql.window import *
 
 Em seguida crie um diretório com o seguinte código PySpark:
 
-```python
+```
 
 Dbutils.fs.mkdirs(“/mnt/dadosmonitorimagens”)
 
