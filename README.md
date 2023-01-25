@@ -1,3 +1,4 @@
+![Logo](logo.pnd)
 <img src="C:/Users/Usuario/Desktop/Lenovo Files/Richard Araujo/1_Preparacao_de_Dados/Imagens/logo.png" alt="Hands On Data" style="height: 100px; width:100px;"/>
 
 # Deploy de Dados no Synapse do Azure
