@@ -182,6 +182,7 @@ No campo *Detached*, procure e clique no dbmonitorimagenscanal para anexar o seu
 Para fazer agregações em PySpark que serão realizadas nos passos abaixo, é necessário importar algumas bibliotecas com os seguintes comandos:
 
 ```
+
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
 from pyspark.sql.window import *
@@ -196,7 +197,9 @@ from pyspark.sql.window import *
 Em seguida crie um diretório com o seguinte código PySpark:
 
 ```python
+
 Dbutils.fs.mkdirs(“/mnt/dadosmonitorimagens”)
+
 ```
 
 ###### [⏪](README.md#Índice)
@@ -235,7 +238,6 @@ Em seguida, ao rodar novamente o comando abaixo, todos os arquivos que foram fei
 Dbutils.fs.mkdirs(“/mnt/dadosmonitorimagens”)
 
 ```
-###### [⏪](README.md#Índice)
 
 ### Comandos de Visualização PySpark
 
@@ -244,6 +246,7 @@ Para ler e visualizar algum dos arquivos carregados no *Data Lake*, execute o co
 ##### spark.read.format()
 
 ```
+
 cl = spark.read.format(‘csv’).options(header=’true’, inferschema=’true’).load(‘/mt/dadosmonitorimagens/TABELA_PEDIDOS.csv’)
 cl.display()
 
@@ -288,7 +291,7 @@ cl.agg(count(“*”).alias(“Qtd.”)).display()
 
 Crie um Database com os seguintes comandos:
 
-```
+```sql
 
 %sql
 Create database if not exists gold_monitorimagens
@@ -306,7 +309,7 @@ Em Seguida vá até o ícone *Data* no menu da Databricks e verifique em *Databa
 
 Em seguida crie a tabela com os seguintes comandos:
 
-```
+```sql
 
 %sql
 create table if not exists gold_monitorimagens.TbMonitorImagensGold
@@ -319,7 +322,6 @@ CustomerState string
 ) 
 using delta
 location ‘mnt/dadosmonitorimagens/gold_monitorimagens/TbMonitorImagensGold’
-
 
 ```
 
@@ -349,6 +351,7 @@ Crie o Azure Synapse Analytics, informe na tela de criação o:
 -	Account Name = stmonitorimagens (observe após este passo, se aparece no File System Name o nome do seu container = ctmonitorimagens)
 
 ###### [⏪](README.md#Índice)
+
 ---
 
 ### Security
@@ -374,6 +377,7 @@ Em seguida, clique com o botão da esquerda sobre o snpdedicated, abra um New SQ
 
 
 #### Create Master Key
+
 ```sql
 
 GO
@@ -463,7 +467,9 @@ cl.write \
 
 ```
 
+
 ###### [⏪](README.md#Índice)
+
 
 
 
