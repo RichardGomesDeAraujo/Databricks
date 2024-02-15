@@ -1,5 +1,4 @@
-<img src="Logo.png" alt="Hands On Data" style="height: 100px; width:115px;"/>
-
+<img src="HOD.png" align="Center" alt="Hands On Data" style="height: 180px; width:260px;"/>
 
 
 ###### by [Richard Gomes de Araújo](https://github.com/RichardGomesDeAraujo) - 25/01/2023
